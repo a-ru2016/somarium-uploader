@@ -1,0 +1,52 @@
+<!doctype html>
+<!--
+  Somarium Uploader のホームページ（Google の OAuth 同意画面の「ホームページ URL」に登録するページ）。
+  目的: Google Auth Platform で外部向けアプリを「本番環境」にするには、ホームページとプライバシーポリシーの URL が必須のため。
+  このアプリは運営者本人だけが、自分の 2 つの YouTube チャンネルに動画を上げるために使う私用のツールであることを、日英で正確に書く。
+-->
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Somarium Uploader</title>
+  <style>
+    /* 外部の CSS・フォントは読まない（ページを軽く、第三者への通信を無くすため）。 */
+    body { font-family: system-ui, sans-serif; line-height: 1.7; max-width: 760px; margin: 0 auto; padding: 24px 16px; color: #222; background: #fff; }
+    h1 { font-size: 1.6rem; } h2 { font-size: 1.2rem; margin-top: 2rem; }
+    a { color: #0b57d0; }
+  </style>
+</head>
+<body>
+  <h1>Somarium Uploader</h1>
+
+  <h2>概要（日本語）</h2>
+  <p>
+    Somarium Uploader は、YouTube チャンネル「体内ミクロ紀行」と英語チャンネル「Somarium」の運営者が、
+    自分で制作した動画を自分のチャンネルへアップロードするために使う、私用のツールです。
+    運営者本人の PC 上でだけ動き、一般の利用者向けには提供していません。
+  </p>
+  <p>このツールが YouTube API Services を通じて行うのは、次のことだけです。</p>
+  <ul>
+    <li>運営者のチャンネルへの動画のアップロード（非公開で上げ、公開は運営者が YouTube Studio で行います）</li>
+    <li>その動画のタイトル・説明・タグ・サムネイル・字幕の設定</li>
+    <li>運営者のチャンネルの情報と、運営者の動画の視聴データ（YouTube Analytics）の読み取り</li>
+  </ul>
+  <p><a href="privacy.html">プライバシーポリシー</a></p>
+
+  <h2>About (English)</h2>
+  <p>
+    Somarium Uploader is a private tool used only by the operator of the YouTube channels
+    "体内ミクロ紀行" and "Somarium" to upload videos they produce to their own channels.
+    It runs only on the operator's own computer and is not offered to the public.
+  </p>
+  <p>Through the YouTube API Services, the tool only:</p>
+  <ul>
+    <li>uploads videos to the operator's channels (as private; the operator publishes them in YouTube Studio),</li>
+    <li>sets the title, description, tags, thumbnail and captions of those videos, and</li>
+    <li>reads the operator's channel information and the analytics of the operator's own videos (YouTube Analytics).</li>
+  </ul>
+  <p><a href="privacy.html">Privacy Policy</a></p>
+
+  <p>Contact: <a href="mailto:socialsurvivors2026@gmail.com">socialsurvivors2026@gmail.com</a></p>
+</body>
+</html>
